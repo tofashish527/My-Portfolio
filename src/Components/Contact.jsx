@@ -26,16 +26,16 @@ export default function Contact() {
                 href="mailto:your-email@example.com"
                 className="text-gray-800 hover:text-cyan-500 font-medium transition"
               >
-                your-email@example.com
+                2011nujum@gmail.com
               </a>
             </div>
             <div className="flex items-center gap-4">
               <HiOutlinePhone className="text-cyan-500 w-6 h-6" />
               <a
-                href="tel:+880123456789"
+                href="tel:+8801338996220"
                 className="text-gray-800 hover:text-cyan-500 font-medium transition"
               >
-                +880 1234 56789
+                +8801338996220
               </a>
             </div>
             <div className="flex items-center gap-4">
@@ -53,7 +53,7 @@ export default function Contact() {
 
           <div className="flex gap-4 mt-10">
             <a
-              href="https://github.com/tofashish"
+              href="https://github.com/tofashish527"
               target="_blank"
               rel="noopener noreferrer"
               className="flex-1 text-center bg-gray-800 hover:bg-gray-900 text-white py-3 rounded-xl font-semibold shadow-md transition"
@@ -61,7 +61,7 @@ export default function Contact() {
               GitHub
             </a>
             <a
-              href="https://linkedin.com/in/tofashish"
+              href="https://www.linkedin.com/in/tofashish-nujum-58a443360?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app"
               target="_blank"
               rel="noopener noreferrer"
               className="flex-1 text-center bg-gradient-to-r from-cyan-500 to-blue-500 hover:from-cyan-600 hover:to-blue-600 text-white py-3 rounded-xl font-semibold shadow-md transition"

@@ -1,5 +1,5 @@
 import { FaGithub, FaLinkedin, FaTwitter, FaFacebook } from "react-icons/fa";
-
+import image from "../assets/image.png"
 export default function Banner() {
   return (
     <section
@@ -65,6 +65,7 @@ export default function Banner() {
       {/* Image Section */}
       <div className="md:w-1/2 flex justify-center mb-8 md:mb-0">
         <img
+          src={image}
           alt="Profile"
           className="w-48 h-48 md:w-64 md:h-64 object-cover rounded-full border-4 border-cyan-500 shadow-lg"
         />

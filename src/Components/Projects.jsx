@@ -1,23 +1,25 @@
 // src/Components/Projects.jsx
 import { Link } from "react-router";
-
+import hobby from "../assets/hobby.png"
+import swift from "../assets/swift.png"
+import task from "../assets/task.png"
 const projects = [
   {
     id: 1,
     name: "Hobby Tribe",
-    image: "/projects/hobby-tribe.png", // put images in public/projects/
+    image: hobby, 
     description: "A social platform for hobby-based groups.",
   },
   {
     id: 2,
     name: "SwiftFix",
-    image: "/projects/swiftfix.png",
+    image: swift,
     description: "A service management app with authentication.",
   },
   {
     id: 3,
-    name: "DevQuest",
-    image: "/projects/devquest.png",
+    name: "Task Monitor",
+    image: task,
     description: "A daily coding tracker for developers.",
   },
 ];

@@ -1,3 +1,5 @@
+import { TfiLayoutSlider } from "react-icons/tfi";
+
 // src/components/Skills.jsx
 export default function Skills() {
   return (
@@ -12,9 +14,10 @@ export default function Skills() {
       <div className="grid md:grid-cols-2 gap-10">
         {/* Frontend */}
         <div className="bg-white shadow-lg rounded-xl p-6 border-t-4 border-cyan-500">
-          <h3 className="text-2xl font-semibold text-gray-800 mb-4">
-            🎨 Frontend Technologies
-          </h3>
+          <h3 className="flex items-center gap-3 text-2xl font-semibold text-gray-800 mb-4">
+  <TfiLayoutSlider className="text-cyan-500 text-3xl" />
+  Frontend Technologies
+</h3>
           <p className="text-gray-700 leading-relaxed">
             HTML, CSS, Tailwind CSS, Bootstrap, React.js
           </p>
@@ -25,9 +28,10 @@ export default function Skills() {
 
         {/* Backend */}
         <div className="bg-white shadow-lg rounded-xl p-6 border-t-4 border-cyan-500">
-          <h3 className="text-2xl font-semibold text-gray-800 mb-4">
-            ⚙️ Backend Technologies
-          </h3>
+          <h3 className="flex items-center gap-3 text-2xl font-semibold text-gray-800 mb-4">
+  <TfiLayoutSlider className="text-cyan-500 text-3xl" />
+  BackendTechnologies
+</h3>
           <p className="text-gray-700 leading-relaxed">
             Node.js, Express.js, Firebase, JWT Authentication
           </p>
@@ -38,9 +42,10 @@ export default function Skills() {
 
         {/* Database */}
         <div className="bg-white shadow-lg rounded-xl p-6 border-t-4 border-cyan-500">
-          <h3 className="text-2xl font-semibold text-gray-800 mb-4">
-            🗄️ Database
-          </h3>
+          <h3 className="flex items-center gap-3 text-2xl font-semibold text-gray-800 mb-4">
+  <TfiLayoutSlider className="text-cyan-500 text-3xl" />
+  Database
+</h3>
           <p className="text-gray-700 leading-relaxed">MongoDB, MySQL</p>
           <div className="mt-4 bg-gray-200 rounded-full h-3">
             <div className="bg-cyan-500 h-3 rounded-full w-[75%]"></div>
@@ -49,9 +54,10 @@ export default function Skills() {
 
         {/* Programming Languages */}
         <div className="bg-white shadow-lg rounded-xl p-6 border-t-4 border-cyan-500">
-          <h3 className="text-2xl font-semibold text-gray-800 mb-4">
-            💻 Programming Languages
-          </h3>
+          <h3 className="flex items-center gap-3 text-2xl font-semibold text-gray-800 mb-4">
+  <TfiLayoutSlider className="text-cyan-500 text-3xl" />
+  Programming Languages
+</h3>
           <p className="text-gray-700 leading-relaxed">C, C++, JavaScript</p>
           <div className="mt-4 bg-gray-200 rounded-full h-3">
             <div className="bg-cyan-500 h-3 rounded-full w-[85%]"></div>
@@ -60,9 +66,10 @@ export default function Skills() {
 
         {/* Tools */}
         <div className="bg-white shadow-lg rounded-xl p-6 border-t-4 border-cyan-500">
-          <h3 className="text-2xl font-semibold text-gray-800 mb-4">
-            🧰 Software Tools
-          </h3>
+          <h3 className="flex items-center gap-3 text-2xl font-semibold text-gray-800 mb-4">
+  <TfiLayoutSlider className="text-cyan-500 text-3xl" />
+  Software Tools
+</h3>
           <p className="text-gray-700 leading-relaxed">
             Git, GitHub, VS Code, Figma, Vercel, Netlify
           </p>
@@ -73,9 +80,10 @@ export default function Skills() {
 
         {/* Domain Expertise */}
         <div className="bg-white shadow-lg rounded-xl p-6 border-t-4 border-cyan-500">
-          <h3 className="text-2xl font-semibold text-gray-800 mb-4">
-            📚 Domain Expertise
-          </h3>
+            <h3 className="flex items-center gap-3 text-2xl font-semibold text-gray-800 mb-4">
+  <TfiLayoutSlider className="text-cyan-500 text-3xl" />
+  Domain Expertise
+</h3>
           <p className="text-gray-700 leading-relaxed">
             Data Structures & Algorithms, Object-Oriented Programming
           </p>
@@ -86,9 +94,10 @@ export default function Skills() {
 
         {/* Problem Solving */}
         <div className="bg-white shadow-lg rounded-xl p-6 border-t-4 border-cyan-500 md:col-span-2">
-          <h3 className="text-2xl font-semibold text-gray-800 mb-4">
-            🧠 Problem Solving
-          </h3>
+              <h3 className="flex items-center gap-3 text-2xl font-semibold text-gray-800 mb-4">
+  <TfiLayoutSlider className="text-cyan-500 text-3xl" />
+  Problem Solving
+</h3>
           <p className="text-gray-700 leading-relaxed">
             Solved <span className="font-semibold">400+</span> algorithmic problems on Codeforces and CodeChef.
           </p>

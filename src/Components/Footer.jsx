@@ -8,15 +8,15 @@ export default function Footer() {
 
         <div className="flex gap-4 mt-4 md:mt-0">
           <a
-            href="https://github.com/tofashish"
-            target="_blank"
+            href="https://github.com/tofashish527"
+           target="_blank"
             rel="noopener noreferrer"
             className="hover:text-white"
           >
             GitHub
           </a>
           <a
-            href="https://linkedin.com/in/tofashish"
+            href="https://www.linkedin.com/in/tofashish-nujum-58a443360?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app" 
             target="_blank"
             rel="noopener noreferrer"
             className="hover:text-white"
@@ -24,7 +24,7 @@ export default function Footer() {
             LinkedIn
           </a>
           <a
-            href="https://twitter.com/tofashish"
+            href="https://x.com/?lang=en-in"
             target="_blank"
             rel="noopener noreferrer"
             className="hover:text-white"

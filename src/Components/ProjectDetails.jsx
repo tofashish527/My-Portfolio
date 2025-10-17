@@ -7,8 +7,8 @@ const projectData = {
     techStack: ["React", "TailwindCSS", "MongoDB", "Express", "Firebase Auth"],
     description:
       "Hobby Tribe is a social platform where users can create and join hobby-based groups. It features user authentication, CRUD operations, and secure role-based access.",
-    liveLink: "https://hobby-tribe.vercel.app/",
-    github: "https://github.com/tofashish/HobbyTribe-client",
+    liveLink: "https://hobby-tribe-355ca.web.app/",
+    github: "https://github.com/tofashish527/HobbyNest-Client-Side",
     challenges:
       "Managing secure user-specific CRUD operations and ensuring dynamic UI updates across group members.",
     improvements:
@@ -19,20 +19,20 @@ const projectData = {
     techStack: ["React", "Tailwind", "Firebase", "Node.js", "Express", "MongoDB"],
     description:
       "SwiftFix allows users to manage repair services, book technicians, and track service history with secure authentication.",
-    liveLink: "https://swiftfix-client.vercel.app/",
-    github: "https://github.com/tofashish/SwiftFix-client",
+    liveLink: "https://swiftfix-client.web.app",
+    github: "https://github.com/tofashish527/SwiftFix-client",
     challenges:
       "Integrating role-based access for customers and service providers.",
     improvements:
       "Plan to integrate payment gateway and live booking notifications.",
   },
   3: {
-    name: "DevQuest",
+    name: "Task Monitor",
     techStack: ["React", "Firebase", "Recharts", "TailwindCSS"],
     description:
       "DevQuest is a productivity app for developers to log daily coding activities, bookmark resources, and track weekly progress.",
-    liveLink: "https://devquest.vercel.app/",
-    github: "https://github.com/tofashish/DevQuest",
+    liveLink: "https://task-monitor-client.web.app/",
+    github: "https://github.com/tofashish527/TaskMonitor-client",
     challenges:
       "Managing data visualization with real-time updates and Firebase authentication persistence.",
     improvements:
