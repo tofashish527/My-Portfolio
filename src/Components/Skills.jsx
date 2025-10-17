@@ -1,6 +1,5 @@
 import { TfiLayoutSlider } from "react-icons/tfi";
 
-// src/components/Skills.jsx
 export default function Skills() {
   return (
     <section

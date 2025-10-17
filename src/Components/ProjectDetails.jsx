@@ -1,4 +1,4 @@
-// src/Components/ProjectDetails.jsx
+
 import { useParams, Link } from "react-router";
 
 const projectData = {
@@ -27,16 +27,16 @@ const projectData = {
       "Plan to integrate payment gateway and live booking notifications.",
   },
   3: {
-    name: "Task Monitor",
-    techStack: ["React", "Firebase", "Recharts", "TailwindCSS"],
+    name: "Task Monitor", 
+    techStack: ["React", "Firebase", "Recharts", "TailwindCSS","Node.js", "Express", "MongoDB"],
     description:
-      "DevQuest is a productivity app for developers to log daily coding activities, bookmark resources, and track weekly progress.",
+      "Task Monitor is an employee productivity tracking dashboard that allows HRs to monitor task completion, hours worked, and performance insights in real-time.",
     liveLink: "https://task-monitor-client.web.app/",
     github: "https://github.com/tofashish527/TaskMonitor-client",
     challenges:
-      "Managing data visualization with real-time updates and Firebase authentication persistence.",
+      "Managing task logs, secure authentication, and generating real-time analytics.",
     improvements:
-      "Add AI-based suggestion engine for learning resources.",
+      "Add role-based dashboards and automatic performance summaries using AI insights.",
   },
 };
 

@@ -1,4 +1,4 @@
-// src/components/Navbar.jsx
+
 import { useState, useEffect } from "react";
 
 export default function Navbar() {
@@ -11,10 +11,10 @@ export default function Navbar() {
     const handleScroll = () => {
       // Get all sections
       const sections = document.querySelectorAll("section[id]");
-      let current = "home"; // default when at the top
+      let current = "home"; 
 
       sections.forEach((section) => {
-        const sectionTop = section.offsetTop - 120; // adjust for navbar height
+        const sectionTop = section.offsetTop - 120; 
         const sectionHeight = section.offsetHeight;
         if (window.scrollY >= sectionTop && window.scrollY < sectionTop + sectionHeight) {
           current = section.getAttribute("id");
@@ -25,7 +25,7 @@ export default function Navbar() {
     };
 
     window.addEventListener("scroll", handleScroll);
-    handleScroll(); // run on load to highlight "Home"
+    handleScroll(); 
 
     return () => window.removeEventListener("scroll", handleScroll);
   }, []);
@@ -35,7 +35,7 @@ export default function Navbar() {
   return (
     <nav className="bg-gray-900 text-white shadow-md fixed w-full z-50">
       <div className="max-w-6xl mx-auto px-4 py-3 flex justify-between items-center">
-        {/* Logo */}
+        
         <h1 className="text-2xl font-bold text-cyan-400">Tofashish</h1>
 
         {/* Desktop Menu */}

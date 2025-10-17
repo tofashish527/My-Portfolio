@@ -1,4 +1,4 @@
-// src/Components/Projects.jsx
+
 import { Link } from "react-router";
 import hobby from "../assets/hobby.png"
 import swift from "../assets/swift.png"
@@ -20,7 +20,7 @@ const projects = [
     id: 3,
     name: "Task Monitor",
     image: task,
-    description: "A daily coding tracker for developers.",
+     description: "An employee task tracking dashboard with analytics.",
   },
 ];
 

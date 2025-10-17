@@ -1,4 +1,4 @@
-// src/components/Education.jsx
+
 export default function Education() {
   return (
     <section
@@ -23,8 +23,6 @@ export default function Education() {
           <span className="font-semibold">CGPA:</span> 3.75 / 4.00 (Till 6th semester)
         </p>
       </div>
-
-      {/* Optionally add more education in the same format */}
     </section>
   );
 }
