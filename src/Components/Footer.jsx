@@ -2,7 +2,7 @@ import React from "react";
 
 export default function Footer() {
   return (
-    <footer className="bg-gray-800 text-gray-300 py-6 mt-12">
+    <footer className="bg-gray-900 text-gray-300 text-lg py-4">
       <div className="max-w-6xl mx-auto px-6 flex flex-col md:flex-row justify-between items-center">
         <p className="text-sm">&copy; {new Date().getFullYear()} Tofashish Nujum. All rights reserved.</p>
 
@@ -22,14 +22,6 @@ export default function Footer() {
             className="hover:text-white"
           >
             LinkedIn
-          </a>
-          <a
-            href="https://x.com/?lang=en-in"
-            target="_blank"
-            rel="noopener noreferrer"
-            className="hover:text-white"
-          >
-            Twitter
           </a>
         </div>
       </div>

@@ -1,41 +1,27 @@
-
-import { Link } from "react-router";
-import hobby from "../assets/hobby.png"
-import swift from "../assets/swift.png"
-import task from "../assets/task.png"
-const projects = [
-  {
-    id: 1,
-    name: "Hobby Tribe",
-    image: hobby, 
-    description: "A social platform for hobby-based groups.",
-  },
-  {
-    id: 2,
-    name: "SwiftFix",
-    image: swift,
-    description: "A service management app with authentication.",
-  },
-  {
-    id: 3,
-    name: "Task Monitor",
-    image: task,
-     description: "An employee task tracking dashboard with analytics.",
-  },
-];
+import { Link, useNavigate } from "react-router";
+import { projectsData } from "../data/projectsData";
+import SectionDivider from "./SectionDevider";
 
 export default function Projects() {
+  const navigate = useNavigate();
+
+  const handleViewDetails = (id) => {
+    // Save scroll position
+    sessionStorage.setItem("scrollPosition", window.scrollY);
+    navigate(`/projects/${id}`);
+  };
+
   return (
-    <section id="projects" className="bg-gray-50 py-20 px-6 md:px-20">
-      <h2 className="text-3xl md:text-4xl font-bold text-center text-gray-800 mb-12">
-        My <span className="text-cyan-500">Projects</span>
+    <section id="projects" className="bg-black px-6 md:px-20">
+      <h2 className="text-3xl md:text-4xl font-bold text-center text-white mb-12">
+        My <span className="text-cyan-400">Projects</span>
       </h2>
 
       <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
-        {projects.map((project) => (
+        {projectsData.map((project) => (
           <div
             key={project.id}
-            className="bg-white rounded-2xl shadow-lg overflow-hidden hover:shadow-2xl transition duration-300"
+            className="border-[#1b2c68a0] bg-gradient-to-r bg-[#0a0d37] border rounded-xl overflow-hidden shadow-[0_0_25px_0_rgba(0,0,0,0.3)] transition-transform hover:scale-105 duration-300"
           >
             <img
               src={project.image}
@@ -43,20 +29,24 @@ export default function Projects() {
               className="w-full h-48 object-cover"
             />
             <div className="p-6">
-              <h3 className="text-xl font-semibold text-gray-800 mb-2">
+              <h3 className="text-xl font-semibold text-cyan-400 mb-2">
                 {project.name}
               </h3>
-              <p className="text-gray-600 mb-4">{project.description}</p>
-              <Link
-                to={`/projects/${project.id}`}
-                className="bg-cyan-500 hover:bg-cyan-600 text-white px-4 py-2 rounded-lg font-medium transition"
+              <p className="text-gray-300 mb-4 text-sm leading-relaxed">
+                {project.description}
+              </p>
+
+              <button
+                onClick={() => handleViewDetails(project.id)}
+                className="inline-block bg-cyan-500 hover:bg-cyan-600 text-white px-4 py-2 rounded-lg font-medium transition"
               >
                 View Details
-              </Link>
+              </button>
             </div>
           </div>
         ))}
       </div>
+      <SectionDivider></SectionDivider>
     </section>
   );
 }

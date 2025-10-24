@@ -33,13 +33,13 @@ export default function Navbar() {
   const isActive = (link) => activeSection === link;
 
   return (
-    <nav className="bg-gray-900 text-white shadow-md fixed w-full z-50">
-      <div className="max-w-6xl mx-auto px-4 py-3 flex justify-between items-center">
+    <nav className="bg-[#0f172a] text-white shadow-md fixed w-full z-50">
+      <div className="max-w-7xl mx-auto px-4 py-3 flex justify-between items-center">
         
-        <h1 className="text-2xl font-bold text-cyan-400">Tofashish</h1>
+        <h1 className="text-2xl font-bold -ml-34 text-cyan-400">Tofashish</h1>
 
         {/* Desktop Menu */}
-        <ul className="hidden md:flex space-x-8 text-lg">
+        <ul className="hidden md:flex space-x-8 text-lg -mr-30">
           {links.map((link) => (
             <li key={link}>
               <a

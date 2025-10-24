@@ -1,74 +1,62 @@
 import { BiPaperPlane } from "react-icons/bi";
+import { FaReact, FaNodeJs, FaPaintBrush, FaMusic } from "react-icons/fa";
 
 export default function About() {
   return (
     <section
       id="about"
-      className="bg-white py-20 px-6 md:px-20 flex flex-col md:flex-row items-start justify-between gap-12"
+      className="bg-black py-20 px-6 md:px-20 flex flex-col md:flex-row items-start justify-between gap-12"
     >
-      {/* Left Side*/}
-      <div className="md:w-2/3">
-        <h2 className="text-3xl md:text-4xl font-bold text-gray-800 mb-6">
-          About <span className="text-cyan-500">Me</span>
+      {/* Left Side */}
+      <div className="md:w-2/3 text-gray-300">
+        <h2 className="text-3xl md:text-4xl font-bold mb-6">
+          <span className="text-cyan-500">About Me</span>
         </h2>
 
-        <p className="text-gray-700 text-lg leading-relaxed mb-5">
-          Hello! I'm <span className="font-semibold text-gray-900">Tofashish Nujum</span>, a passionate{" "}
-          <span className="text-cyan-500 font-semibold">Frontend Developer</span> who loves crafting beautiful, 
-          efficient, and user-friendly web interfaces. My programming journey began out of curiosity — I wanted 
-          to understand how websites come to life, and that curiosity quickly grew into a full-fledged passion for web development.
-        </p>
+<p className="text-lg md:text-xl leading-relaxed max-w-4xl mb-8 text-gray-300">
+  I am <span className="font-semibold text-white">Tofashish Nujum</span>, a dedicated and passionate <span className="text-cyan-400 font-semibold">MERN Stack Developer</span> committed to building high-quality, scalable, and user-friendly web applications. With a strong problem-solving mindset and a self-driven learning attitude, I continuously explore emerging technologies to stay at the forefront of modern web development. My core expertise includes <span className="font-bold text-cyan-400">JavaScript, React, NodeJS, Express, and MongoDB</span>, allowing me to craft responsive front-end interfaces and robust back-end solutions. I focus on writing clean, maintainable code while delivering applications that are both visually appealing and functionally efficient. Beyond coding, I am enthusiastic about discovering new technologies, enhancing my skills, and engaging in creative projects. I am eager to contribute to innovative teams and projects, creating meaningful digital experiences that combine technical excellence with thoughtful design.
+</p>
+   
 
-        <p className="text-gray-700 text-lg leading-relaxed mb-5">
-          Over time, I’ve learned and worked with technologies like{" "}
-          <span className="font-semibold">React, JavaScript, TailwindCSS,</span> and{" "}
-          <span className="font-semibold">Node.js</span>. I enjoy building modern, responsive applications that 
-          provide smooth and meaningful user experiences. My focus is on writing clean, maintainable code while 
-          continuously improving as a developer.
-        </p>
-
-        <p className="text-gray-700 text-lg leading-relaxed">
-          Outside of programming, I love engaging in creative activities and personal growth. I enjoy{" "}
-          <span className="font-semibold">painting</span>, exploring{" "}
-          <span className="font-semibold">new technologies</span>, and discovering{" "}
-          <span className="font-semibold">music and design trends</span>. I believe that balance between work 
-          and creativity fuels innovation and keeps me inspired as a developer.
-        </p>
       </div>
 
-      {/* Right Side */}
-      <div className="md:w-1/3 bg-gray-50 border-l-4 border-cyan-500 rounded-lg shadow-md p-6 text-center md:text-left">
-        <h3 className="text-2xl font-semibold text-gray-800 mb-4">
-          A Little More About Me 
-        </h3>
+      {/* Right Side - 2x2 Skill Squares */}
+      {/* Right Side - 2x2 Skill Squares */}
+<div className="md:w-1/3 grid grid-cols-2 grid-rows-2 mt-15 gap-4">
+  {[
+  { 
+    title: "Creative Thinker", 
+    description: "Develops innovative solutions to enhance user experience and business impact.",
+    icon: <BiPaperPlane className="text-cyan-500 text-3xl" /> 
+  },
+  { 
+    title: "Problem Solver", 
+    description: "Analyzes challenges and implements efficient, scalable solutions.",
+    icon: <BiPaperPlane className="text-cyan-500 text-3xl" /> 
+  },
+  { 
+    title: "UI/UX Enthusiast", 
+    description: "Designs intuitive and visually appealing interfaces aligned with user needs.",
+    icon: <BiPaperPlane className="text-cyan-500 text-3xl" /> 
+  },
+  { 
+    title: "Lifelong Learner", 
+    description: "Continuously upgrades skills and adapts to evolving technologies and industry standards.",
+    icon: <BiPaperPlane className="text-cyan-500 text-3xl" /> 
+  }
+]
+.map((item, idx) => (
+    <div
+      key={idx}
+      className="bg-gray-800 hover:bg-gray-900 text-white flex flex-col items-center justify-center rounded-lg shadow-lg p-6 text-center transition transform hover:scale-105"
+    >
+      {item.icon}
+      <h4 className="mt-3 font-bold text-lg">{item.title}</h4>
+      <p className="mt-2 text-gray-300 text-sm">{item.description}</p>
+    </div>
+  ))}
+</div>
 
-        <ul className="text-gray-700 text-lg space-y-3">
-          <li className="flex items-center gap-3 text-gray-800 text-lg font-medium">
-        <BiPaperPlane className="text-cyan-500 text-2xl" />
-        <span>Creative Thinker</span>
-      </li>
-      <li className="flex items-center gap-3 text-gray-800 text-lg font-medium">
-        <BiPaperPlane className="text-cyan-500 text-2xl" />
-        <span>Lifelong Learner</span>
-      </li>
-      <li className="flex items-center gap-3 text-gray-800 text-lg font-medium">
-        <BiPaperPlane className="text-cyan-500 text-2xl" />
-        <span>Love solving UI/UX challenges</span>
-      </li>
-      <li className="flex items-center gap-3 text-gray-800 text-lg font-medium">
-        <BiPaperPlane className="text-cyan-500 text-2xl" />
-        <span>Fuelled by coffee & late-night coding</span>
-      </li>
-      <li className="flex items-center gap-3 text-gray-800 text-lg font-medium">
-        <BiPaperPlane className="text-cyan-500 text-2xl" />
-        <span>Dreaming of building impactful products</span>
-      </li>
-        </ul>
-
-        <p className="mt-6 text-gray-600 italic">
-          “Code is like art — every line tells a story.”
-        </p>
-      </div>
     </section>
   );
 }
